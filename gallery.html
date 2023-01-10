@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galleri | iMAGOS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./scripts/Main.js"></script>
+    
+  </head>
+  <body style="background-color: #4D8582;">
+    <header>
+        <img src="imagos/logo.png" alt="" id="logo" onclick="OpenLink('index')">
+        <ul class="headerUl">
+            <li onclick="OpenLink('about')">Kontakta oss</li>
+            <li onclick="OpenLink('gallery')">Galleri</li>
+        </ul>
+    </header>
+    <div>
+      <h1 class="GalleryTitleS">Galleri</h1>
+      <div class="dropdownDiv">
+        <div class="dropdown">
+          <button class="dropbtn">Filter</button>
+          <div id="" class="dropdown-content" aria-haspopup="true" role="button" tabIndex="0">
+            <p onclick="Sort(0)"    aria-haspopup="true" role="button">Alla</p>
+            <p onclick="Sort('exteriör')" aria-haspopup="true" role="button">Inreding</p>
+            <p onclick="Sort('inreding')" aria-haspopup="true" role="button">Exteriör</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="GalleryFBox">
+        <img src="imagos/DSCF7861-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF7870-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DJI_0248.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DJI_0249.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DJI_0264.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DJI_0338.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DJI_0537.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DSCF7614.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DSCF7659.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DSCF7606.webp"     alt="" id="exteriör" class="item" />
+        <img src="imagos/DSCF7879-HDR.webp" alt="" id="exteriör" class="item" />
+        <img src="imagos/DSCF7873-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8019-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8022-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8025-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8040-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8049-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8052-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8055-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8061-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8066-Pano.webp"alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8069-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8075-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8089-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8092-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8095-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8101-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8107-HDR.webp" alt="" id="inreding" class="item" />
+        <img src="imagos/DSCF8110-HDR.webp" alt="" id="inreding" class="item" />
+    </section>
+  </body>
+  <footer>
+    <p>© 2020-2022 iMAGOS</p>
+  </footer>
+</html>

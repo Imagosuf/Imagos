@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    #D68B54
+    #EAC7A9
+    #CCD7D1
+    #4D8582
+*/
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+section {
+    background-color: #CCD7D1;
+    position: relative;
+    margin-bottom: 20rem;
+}
+
+#main {
+    margin-top: -80px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.headerUl {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18em;
+    padding: 1rem;
+    margin: 0;
+    margin-right: 8rem;
+}
+
+.headerUl li {
+    border: 1px solid hsl(0, 0%, 90%);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+    margin: 1rem;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#mainImg {
+    height: unset;
+    width: 100vw;
+}
+
+.centerMain {
+    position: absolute;
+    display: flex;
+    top: min(20rem, 20vw);
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.mainTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerMain h3 {
+    font-size: 2vw;
+    font-weight: 400;
+    border: 1px solid #4D8582;
+    padding: 0.5rem;
+}
+
+.centerMain h3:hover {
+    cursor: pointer;
+}
+
+#centerText {
+    font-size: 10vw;
+    margin-bottom: 2rem;
+    height: 18vw;
+}
+
+.aboutSec {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+.aboutSec h2 {
+    font-size: 75px;
+    margin-bottom: 1em;
+}
+
+.founders {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8vw;
+    margin-bottom: 5rem;
+}
+
+.founders h5 {
+    font-size: 26px;
+}
+
+.headshotImg {
+    width: 300px;
+    background-color: black;
+}
+
+.gridSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.gridSec h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 62px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.grid div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.grid img {
+    height: 500px;
+}
+
+.GalBut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 58px;
+    padding: 1.5rem 2rem;
+    border: 1px solid #4D8582;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: -3em;
+    margin-bottom: 5rem;
+}
+
+.GalBut:hover {
+    cursor: pointer;
+}
+
+footer p {
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+.slideshow-c {
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+
+.slideS {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dots .active,
+.dots:hover {
+    background-color: #3a3a3a;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        filter: brightness(50%);
+    }
+
+    to {
+        filter: brightness(100%);
+    }
+}
+
+@keyframes fade {
+    from {
+        filter: brightness(50%);
+    }
+
+    to {
+        filter: brightness(100%);
+    }
+}
+
+.Arrow {
+    text-align: center;
+    font-size: 2vw;
+    padding: 2vw;
+    font-weight: 100;
+    z-index: 5;
+}
+
+
+
+
+.GalleryTitleS {
+    text-align: left;
+    width: 80%;
+    font-size: 76px;
+    margin-left: 12%;
+    margin-top: 0em;
+    font-weight: bold;
+    color: #CCD7D1;
+}
+
+
+.dropbtn {
+    background-color: #D68B54;
+    border-radius: 5px;
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownDiv {
+    position: absolute;
+    right: 10%;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+/*
+    #D68B54
+    #EAC7A9
+    #CCD7D1
+    #4D8582
+*/
+
+.dropdown-content p:hover {
+    background-color: #EAC7A9;
+    cursor: pointer;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover, .dropbtn {
+    background-color: #d8915f;
+}
+
+.GalleryFBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 8%;
+    padding: 1% 6%;
+
+}
+
+.item {
+    height: 500px;
+    transition: height 0.6s 0.4s;
+}
+
+.GalleryFBox img:hover {
+    height: 475px;
+}
+
+.aboutPage {
+    margin-top: 8rem;
+    margin-top: 8rem;
+    height: 500px;
+}
+
+.aboutGridDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: fit-content;
+    margin: auto;
+    gap: 10em;
+}
+
+.aboutGridDiv * {
+    max-height: 500px;
+}
+
+.aboutInfoDiv {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: fit-content;
+    margin: auto;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+.aboutInfoDiv a img {
+    width: 10rem;
+}
+
+.aboutInfoDiv div {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#links {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#links li {
+    margin: 1rem;
+    text-align: left;
+}
+
+#links a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*
+    Media
+*/
+
+@media screen and (max-width: 505px) {
+    section {
+        margin-bottom: 10rem;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin: .3rem;
+    }
+
+    #mainImg {
+        height: 50vh;
+        width: unset;
+        margin-left: min(calc((100vw - 25vh) * -1), 200px);
+    }
+
+    .centerMain {
+        top: 20vh;
+    }
+
+    .centerMain h3 {
+        font-size: 5vw;
+        font-weight: 400;
+        border: 2px solid #4D8582;
+        padding: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .headerUl li {
+        border: 1px solid hsl(0, 0%, 90%);
+        padding: 0.45rem;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .headerUl {
+        margin-right: 1rem;
+        padding: 0;
+        justify-content: space-evenly;
+        width: 16em;
+    }
+
+    .founders {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8vw;
+        margin-bottom: 5rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        margin: auto;
+    }
+
+    .grid div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem 0 10rem 0;
+    }
+
+    .rev {
+        flex-direction: column-reverse !important;
+    }
+
+    .grid img {
+        width: 100vw;
+        height: unset;
+    }
+
+    .GalBut {
+        margin-top: 0.5em;
+        margin-bottom: 5rem;
+    }
+
+    .GalBut:hover {
+        cursor: pointer;
+    }
+
+    .Arrow {
+        font-size: 1.3vw;
+    }
+
+    .item {
+        width: 100vw;
+        height: unset;
+        transition: height 0.6s 0.4s;
+    }
+
+    .GalleryFBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        margin-top: 28%;
+        padding: 1% 6%;
+    }
+
+    .GalleryFBox img:hover,
+    .GalleryFBox img:active {
+        width: 95vw;
+        height: unset;
+    }
+
+    .aboutGridDiv {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .aboutInfoDiv {
+        z-index: 1000;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+
+    .aboutInfoDiv a img {
+        width: 8rem;
+    }
+    .MugShot {
+        width: 100vw;
+        max-width: unset;
+        max-height: none;
+    }
+
+    .MugShot img {
+        width: 100%;
+        max-height: unset;
+    }
+
+    .aboutPage {
+        height: fit-content;
+    }
+}

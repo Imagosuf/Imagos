@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="scripts/Main.js" defer></script>
+    <title>iMAGOS</title>
+</head>
+<body>
+    <header>
+        <img src="imagos/logo.png" alt="" id="logo" onclick="OpenLink('index')">
+        <ul class="headerUl">
+            <li onclick="OpenLink('about')">Kontakta oss</li>
+            <li onclick="OpenLink('gallery')">Galleri</li>
+        </ul>
+    </header>
+    <section id="main">
+        <div class="slideshow-c">
+            <div class="slideS fade">
+                <img src="imagos/DJI_0248.webp" alt="" id="mainImg" class="active">
+            </div>
+            <div class="slideS fade">
+                <img src="imagos/DJI_0249.webp" alt="" id="mainImg">
+            </div>
+            <div class="slideS fade">
+                <img src="imagos/DJI_0537.webp" alt="" id="mainImg">
+            </div>
+            <div class="slideS fade">
+                <img src="imagos/DSCF7879-HDR.webp" alt="" id="mainImg">
+            </div>
+            <div class="slideS fade">
+                <img src="imagos/DSCF8055-HDR.webp" alt="" id="mainImg">
+            </div>
+            <div class="slideS fade">
+                <img src="imagos/DSCF8092-HDR.webp" alt="" id="mainImg">
+            </div>
+        </div>
+        <div class="mainTextDiv">
+            <div class="centerMain">
+                <img src="imagos/logo-big.png" alt="" id="centerText">
+                <h3 onclick="OpenLink('gallery')">Fastighetsfoto</h3>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <section class="gridSec">
+        <h2>Alla ska ha fina bilder på sin...</h2>
+        <div class="grid">
+            <div>
+                <img src="imagos/DJI_0264.webp" alt="">
+                <div><p>Villa</p></div>
+            </div>
+            <div class="rev">
+                <div><p>Lägenhet</p></div>
+                <img src="imagos/DSCF8052-HDR.webp" alt="">
+            </div>
+            <div>
+                <img src="imagos/DSCF8025-HDR.webp" alt="">
+                <div><p>Inredning</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutSec">
+        <h2>Vi på iMAGOS</h2>
+        <div class="founders">
+            <div>
+                <img src="imagos/ImagosMugShots-4.webp" alt="" class="headshotImg">
+                <h5>Kevin Sswal</h5>
+                <p>Verkställande Direktör</p>
+            </div>
+            <div>
+                <img src="imagos/ImagosMugShots-2.webp" alt="" class="headshotImg">
+                <h5>Albin Liungman</h5>
+                <p>Huvud Fotograf</p>
+            </div>
+            <div>
+                <img src="imagos/ImagosMugShots-3.webp" alt="" class="headshotImg">
+                <h5>Charlie Andersson</h5>
+                <p>Ekonomidirektör</p>
+            </div>
+        </div>
+    </section>
+    <div class="GalBut">
+        <h6 onclick="OpenLink('gallery')">Gallery</h6>
+    </div>
+    <footer>
+        <p>© 2020-2022 iMAGOS</p>
+    </footer>
+</body>
+</html>
