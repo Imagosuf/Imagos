@@ -54,7 +54,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18em;
+    width: 22em;
     padding: 1rem;
     margin: 0;
     margin-right: 8rem;
@@ -184,6 +184,10 @@ header {
 
 .grid img {
     height: 500px;
+}
+
+.grid img[wide] {
+    height: 460px;
 }
 
 .GalBut {
@@ -422,6 +426,20 @@ footer p {
     flex-direction: column;
 }
 
+.omossdiv {
+    max-width: 60rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    font-size: 18px;
+    padding: 0 1.25rem;
+}
+
+.omossdiv h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #D68B54;
+}
+
 #links {
     text-decoration: none;
     list-style: none;
@@ -522,6 +540,11 @@ footer p {
     }
 
     .grid img {
+        width: 100vw;
+        height: unset;
+    }
+
+    .grid img[wide] {
         width: 100vw;
         height: unset;
     }

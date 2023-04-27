@@ -3,16 +3,15 @@ showSlides(slideIndex);
 SlideTime();
 
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let slides = document.querySelectorAll(".slideS");
-  //let dots = document.querySelectorAll(".dots");
+  const slides = document.querySelectorAll(".slideS");
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -42,7 +41,7 @@ function OpenSite(n) {
 }
 
 function Sort(n) {
-  let ImgList = document.querySelectorAll(".item");
+  const ImgList = document.querySelectorAll(".item");
   if (n == 0) {
     for (let index = 0; index < ImgList.length; index++) {
       ImgList[index].style.display = "block";
@@ -70,20 +69,19 @@ function Sort(n) {
 }
 
 function TitleLoad() {
-  First('#A2');
-  First('#A3');
-  First('#A4');
-  First('#A5');
-  First('#A6');
-  First('#A7');
-  First('#A8');
-  First('#A9');
-  
+  First("#A2");
+  First("#A3");
+  First("#A4");
+  First("#A5");
+  First("#A6");
+  First("#A7");
+  First("#A8");
+  First("#A9");
 }
 
 function First(n) {
-  let Album = document.querySelector(n);
-  let childs = Album.children;
+  const Album = document.querySelector(n);
+  const childs = Album.children;
   if (Album.toggleAttribute("open")) {
     for (let index = 1; index < childs.length; index++) {
       childs[index].style.display = "none";
@@ -96,3 +94,4 @@ function First(n) {
     Album.classList.toggle("open");
   }
 }
+
